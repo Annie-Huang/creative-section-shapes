@@ -87,6 +87,10 @@ section {
   height: 50px;
   background: var(--spike-color);
   -webkit-mask-image: url('assets/triangle.svg');
+
+  /* you can try different number to have a look, e.g. 10px 20px*/
+  -webkit-mask-size: 10px 20px;
+  /*-webkit-mask-size: 10px 50px;*/
 }
 
 .spikes::before {
