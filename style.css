@@ -33,3 +33,11 @@ body {
 .section-title {
   font-size: 2.25rem;
 }
+
+section {
+  padding-block: 5rem;
+}
+
+.diagonal {
+  background-image: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
+}
