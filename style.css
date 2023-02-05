@@ -62,3 +62,10 @@ section {
 
   transform: skewY(var(--skew-angle));
 }
+
+.spikes {
+  position: relative;
+  color: black;
+  /* linear-gradient '90deg' is the same as 'to right' */
+  background: linear-gradient(to right, #fdc830, #f37335);
+}
