@@ -78,3 +78,10 @@ section {
   height: 50px;
   background: purple;
 }
+
+.spikes::before {
+  top: 0;
+}
+.spikes::after {
+  bottom: 0;
+}
