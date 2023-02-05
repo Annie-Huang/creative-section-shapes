@@ -40,12 +40,17 @@ section {
 
 .diagonal {
   position: relative;
-  background-image: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
+  /*background-image: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);*/
 }
 
+/* This make sure the skew angle is always the same when you resize the screen */
 .diagonal::after {
   content: '';
-  background: steelblue;
+  /*background: steelblue;*/
+  background-image: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
   position: absolute;
+  z-index: -1;
   inset: 0;
+
+  transform: skewY(-5deg);
 }
