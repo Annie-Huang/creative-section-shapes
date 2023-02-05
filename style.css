@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+html {
+  /* Does not work as my computer is not set to dark mode*/
+  color-scheme: dark light;
+
+  background-color: black;
+  color: white;
+}
+
 body {
   margin: 0;
 }
