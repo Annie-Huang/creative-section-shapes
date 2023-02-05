@@ -4,6 +4,9 @@ https://github.com/kevin-powell/creative-section-shapes
 https://github.com/Annie-Huang/creative-section-shapes
 
 https://yqnn.github.io/svg-path-editor/     <-- to create assets/triangle.svg
+
+https://css-generators.com/
+https://css-generators.com/wavy-shapes/
 -------------------------------------------------------------------------
 
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 5" preserveAspectRatio="none">
