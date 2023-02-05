@@ -4,15 +4,22 @@
   box-sizing: border-box;
 }
 
+:root {
+  --body-bg: hsl(0, 0%, 12%);
+}
+
 html {
   /* Does not work as my computer is not set to dark mode*/
   color-scheme: dark light;
 
-  background-color: black;
-  color: white;
+  /*background-color: black;*/
+  /*color: white;*/
 }
 
 body {
+  background-color: var(--body-bg);
+  color: white;
+
   font-family: system-ui;
   font-size: 1.25rem;
   line-height: 1.5;
