@@ -69,3 +69,12 @@ section {
   /* linear-gradient '90deg' is the same as 'to right' */
   background: linear-gradient(to right, #fdc830, #f37335);
 }
+
+.spikes::before,
+.spikes::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  background: purple;
+}
