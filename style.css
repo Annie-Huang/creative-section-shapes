@@ -71,6 +71,8 @@ section {
 }
 
 .spikes {
+  --spike-width: 50px;
+  --spike-height: 10px;
   --spike-color: var(--body-bg);
 
   position: relative;
@@ -84,13 +86,13 @@ section {
   content: '';
   position: absolute;
   width: 100%;
-  height: 50px;
+  height: var(--spike-height); /* need to match the mask height */
   background: var(--spike-color);
   -webkit-mask-image: url('assets/triangle.svg');
 
   /* you can try different number to have a look, e.g. 10px 20px*/
-  -webkit-mask-size: 10px 20px;
-  /*-webkit-mask-size: 10px 50px;*/
+  /*-webkit-mask-size: 10px 20px;*/
+  -webkit-mask-size: var(--spike-width) var(--spike-height);
 }
 
 .spikes::before {
