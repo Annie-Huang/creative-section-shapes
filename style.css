@@ -39,6 +39,9 @@ section {
 }
 
 .diagonal {
+  --skew-angle: -5deg;
+  --background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
+
   position: relative;
   /*background-image: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);*/
 
@@ -52,10 +55,10 @@ section {
 .diagonal::after {
   content: '';
   /*background: steelblue;*/
-  background-image: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
+  background-image: var(--background);
   position: absolute;
   z-index: -1;
   inset: 0;
 
-  transform: skewY(-5deg);
+  transform: skewY(var(--skew-angle));
 }
