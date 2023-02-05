@@ -88,11 +88,18 @@ section {
   width: 100%;
   height: var(--spike-height); /* need to match the mask height */
   background: var(--spike-color);
+
+  /* Chrome still have -webkit for mask. Firefox and Safari doesn't (checked on 05/02/2023) */
   -webkit-mask-image: url('assets/triangle.svg');
 
   /* you can try different number to have a look, e.g. 10px 20px*/
   /*-webkit-mask-size: 10px 20px;*/
   -webkit-mask-size: var(--spike-width) var(--spike-height);
+  /*-webkit-mask-repeat: repeat-x; As long as you have the same height, you don't need to do this step*/
+
+  mask-image: url('assets/triangle.svg');
+  mask-size: var(--spike-width) var(--spike-height);
+  /*mask-repeat: repeat-x;*/
 }
 
 .spikes::before {
