@@ -41,6 +41,11 @@ section {
 .diagonal {
   position: relative;
   /*background-image: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);*/
+
+  /* This make sure the z-index=-1 in ::after is always stay within the diagonal, in case this section is inside another
+     section that has a background image, which will push this z-index all the way to the very bottom
+     */
+  isolation: isolate;
 }
 
 /* This make sure the skew angle is always the same when you resize the screen */
